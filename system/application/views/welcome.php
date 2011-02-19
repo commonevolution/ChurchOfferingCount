@@ -1,0 +1,1 @@
+Hi, <strong><?=$username?></strong>! You are logged in now. <?=anchor('/auth/logout/', 'Logout')?>
