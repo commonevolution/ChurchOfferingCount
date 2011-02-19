@@ -1,0 +1,32 @@
+
+    #content{
+        position: relative;
+    }
+
+        #action_buttons{
+            position: absolute;
+            right: 0px;
+            top: -12px;
+        }
+
+        #pager a, #pager strong{
+            display: inline-block;
+            border: 1px solid #999;
+            color: #333;
+            background: #eee;
+            padding: 2px 5px 2px 5px;
+            text-decoration: none;
+            margin-bottom: 15px;
+        }
+        #pager strong{
+            border: 1px solid #eee;
+            background: #eee;
+        }
+        #pager a:hover{
+            background: #c3d9ff;
+        }
+
+    #footer{
+        text-align: center;
+        color: #999;
+    }        
