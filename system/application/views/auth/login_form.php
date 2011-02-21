@@ -22,8 +22,9 @@ $remember = array(
 	'name'	=> 'remember',
 	'id'	=> 'remember',
 	'value'	=> 1,
-	'checked'	=> set_value('remember'),
-	'style' => 'margin:0;padding:0',
+	'checked' => 'checked',
+	//'checked'	=> set_value('remember'),
+	'style' => 'margin:0;padding:0;display:none;',
 );
 $captcha = array(
 	'name'	=> 'captcha',
@@ -83,11 +84,11 @@ $captcha = array(
 	<tr>
 		<td colspan="3">
 			<?php echo form_checkbox($remember); ?>
-			<?php echo form_label('Remember me', $remember['id']); ?>
+			<?php //echo form_label('Remember me', $remember['id']); ?>
+			<?php echo form_submit('submit', 'Let me in'); ?>
 			<?php echo anchor('/auth/forgot_password/', 'Forgot password'); ?>
 			<?php if ($this->config->item('allow_registration', 'tank_auth')) echo anchor('/auth/register/', 'Register'); ?>
 		</td>
 	</tr>
 </table>
-<?php echo form_submit('submit', 'Let me in'); ?>
 <?php echo form_close(); ?>
