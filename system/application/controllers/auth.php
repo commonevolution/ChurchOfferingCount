@@ -114,12 +114,8 @@ class Auth extends Controller
 	function register()
 	{
 		if ($this->tank_auth->is_logged_in()) {									// logged in
-<<<<<<< HEAD
-			redirect('/reports/');
-=======
 			redirect('/reports/index/');
->>>>>>> next
-
+		
 		} elseif ($this->tank_auth->is_logged_in(FALSE)) {						// logged in, not activated
 			redirect('/auth/send_again/');
 
