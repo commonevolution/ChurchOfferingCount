@@ -115,7 +115,7 @@ class Auth extends Controller
 	{
 		if ($this->tank_auth->is_logged_in()) {									// logged in
 			redirect('/reports/index/');
-
+		
 		} elseif ($this->tank_auth->is_logged_in(FALSE)) {						// logged in, not activated
 			redirect('/auth/send_again/');
 
